@@ -1,0 +1,20 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  &__logo {
+    width: 13rem;
+  }
+
+  &__menu {
+    display: flex;
+    flex: 0 1 50%;
+    margin-left: auto;
+  }
+
+  &__buttons {
+  }
+}
+
+.mg-right {
+  margin-right: 2rem;
+}
