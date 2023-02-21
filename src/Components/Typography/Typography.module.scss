@@ -1,0 +1,38 @@
+.Spaced_Paragraph {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  /* identical to box height */
+
+  letter-spacing: 0.4rem;
+
+  /* Primary */
+
+  color: var(--color-purple);
+}
+
+.Heading_2 {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  //   line-height: 80rem;
+
+  /* DarkPurple */
+
+  color: var(--color-black);
+}
+
+.Paragraph {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+
+  /* DarkPurple */
+
+  color: var(--color-black);
+}

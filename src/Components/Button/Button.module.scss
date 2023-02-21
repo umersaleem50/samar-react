@@ -18,4 +18,11 @@
     color: var(--color-purple);
     box-shadow: none;
   }
+
+  &--outline {
+    border: 2px solid var(--color-grey-1);
+    color: var(--color-black);
+    background-color: transparent;
+    box-shadow: none;
+  }
 }

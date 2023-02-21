@@ -1,0 +1,39 @@
+.Hero {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  margin-top: 4rem;
+  //   align-items: center;
+
+  &__left {
+    flex: 0 1 75%;
+    padding: 4rem;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white-light);
+    border-radius: 2rem;
+    position: relative;
+    &__detail {
+      max-width: 50%;
+    }
+
+    &__image {
+      img {
+        position: absolute;
+        bottom: 0;
+        right: -10rem;
+        height: 80%;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      margin-top: 2rem;
+    }
+  }
+  &__right {
+    width: 100%;
+    flex: 0 1 30%;
+  }
+}

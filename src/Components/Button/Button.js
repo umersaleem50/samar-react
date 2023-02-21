@@ -4,6 +4,7 @@ export const BtnFull = (props) => {
     <button
       className={[
         props.grey ? classes["btn--grey"] : "",
+        props.outline ? classes["btn--outline"] : "",
         classes["btn"],
         classes["btn-full"],
         props.className,
@@ -11,6 +12,7 @@ export const BtnFull = (props) => {
         .flat()
         .join(" ")}
       onClick={props.onClick}
+      style={props.style}
     >
       {props.text || props.children}
     </button>
