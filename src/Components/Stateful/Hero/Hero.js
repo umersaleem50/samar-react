@@ -1,27 +1,29 @@
 import { Component } from "react";
 import { BtnFull } from "../../Button/Button";
 import {
-  Heading_2,
+  HEADING2,
   Paragraph,
   Spaced_Paragraph,
 } from "../../Typography/Typography";
 import classes from "./Hero.module.scss";
+
 class Hero extends Component {
   constructor(props) {
     super(props);
     this.state = { currentSlide: 0 };
   }
-
   render() {
     return (
       <div className={classes["Hero"]}>
         <div className={classes["Hero__left"]}>
           <div className={classes["Hero__left__detail"]}>
             <Spaced_Paragraph bold>BACK TO 4AG ESPORTS</Spaced_Paragraph>
-            <Heading_2 style={{ lineHeight: "-20rem" }}>4AG ESPORTS</Heading_2>
-            <Heading_2 style={{ fontWeight: "600" }}>
-              for electronic sport
-            </Heading_2>
+            <HEADING2 style={{ lineHeight: "-20rem" }}>4AG ESPORTS</HEADING2>
+            <HEADING2
+              style={{ fontWeight: "600" }}
+              text={"for electronic sport"}
+            />
+
             <Paragraph>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

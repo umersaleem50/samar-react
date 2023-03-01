@@ -1,6 +1,9 @@
 .Navbar {
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 900px) {
+    justify-content: space-between;
+  }
   &__logo {
     width: 13rem;
   }
@@ -9,6 +12,14 @@
     display: flex;
     flex: 0 1 50%;
     margin-left: auto;
+    @media only screen and (max-width: 900px) {
+      margin-left: 2rem;
+      flex: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   &__buttons {

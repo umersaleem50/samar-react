@@ -23,7 +23,7 @@ export const Spaced_Paragraph = (props) => {
   );
 };
 
-export const Heading_2 = (props) => {
+export const HEADING2 = (props) => {
   return (
     <h2
       className={classes["Heading_2"]}
@@ -42,5 +42,16 @@ export const Paragraph = (props) => {
     >
       {props.text || props.children}
     </p>
+  );
+};
+
+export const HEADING3 = (props) => {
+  return (
+    <h3
+      className={classes["Heading3"]}
+      style={{ ...props.style, ...styleHandler(props) }}
+    >
+      {props.text || props.children}
+    </h3>
   );
 };

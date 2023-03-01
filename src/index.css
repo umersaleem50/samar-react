@@ -4,10 +4,15 @@
   --color-primary: #ff754c;
   --color-white: #fff;
   --color-grey: #f0eeff;
+
   --color-grey-1: #aaaaaa;
   --color-purple: #6c5dd3;
   --color-black: #11142d;
   --color-white-light: #f2f0fe;
+
+  /* OTHER PROPERTIES */
+
+  --max-width: 114rem;
 }
 
 *,
@@ -26,9 +31,49 @@ html {
 
 body {
   /* 1rem = 16px */
-  max-width: 114rem;
+  max-width: var(--max-width);
   margin: 0 auto;
   /* 1140px */
 
   font-family: inherit;
 }
+
+.section {
+  margin: 4rem auto;
+  max-width: var(--max-width);
+}
+
+/* min-width:900 within 900px */
+/* @media only screen and (min-width: 900px) {
+  body {
+    background-color: orange;
+  }
+} */
+/* 900-onward */
+
+/* 0-900px */
+
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 20.5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 20.5%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 20.5%;
+  }
+}
+
